@@ -1,6 +1,6 @@
 import { Client } from "https://esm.sh/@gradio/client";
 
-const client = await Client.connect("Xefea/animals");
+const client = await Client.connect("Xefea/CatDog");
 
 document.getElementById("predictButton").onclick = async () => {
     const file = document.getElementById("imageInput").files[0];

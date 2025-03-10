@@ -3,7 +3,7 @@ import fs from "fs";
 
 async function predictImage() {
     const exampleImage = fs.readFileSync("cat.jpg");
-    const client = await Client.connect("Xefea/animals");
+    const client = await Client.connect("Xefea/CatDog");
     const result = await client.predict("/predict", { 
         img: exampleImage
     });
